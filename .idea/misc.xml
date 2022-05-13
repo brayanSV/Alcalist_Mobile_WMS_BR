@@ -3,7 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/IWDEV1/Desktop/PracticasNew/Alcalist_Mobile_WMS_BR/app/src/main/res/drawable/button_gray.xml" value="0.193" />
+        <entry key="..\:/Users/IWDEV1/Desktop/PracticasNew/Alcalist_Mobile_WMS_BR/app/src/main/res/drawable/onclick_backgroud_blue.xml" value="0.193" />
+        <entry key="..\:/Users/IWDEV1/Desktop/PracticasNew/Alcalist_Mobile_WMS_BR/app/src/main/res/drawable/onclick_backgroud_white.xml" value="0.193" />
+        <entry key="..\:/Users/IWDEV1/Desktop/PracticasNew/Alcalist_Mobile_WMS_BR/app/src/main/res/drawable/onclick_backgroud_white_border_gray.xml" value="0.193" />
+        <entry key="..\:/Users/IWDEV1/Desktop/PracticasNew/Alcalist_Mobile_WMS_BR/app/src/main/res/drawable/synchronize .xml" value="0.193" />
+        <entry key="..\:/Users/IWDEV1/Desktop/PracticasNew/Alcalist_Mobile_WMS_BR/app/src/main/res/drawable/synchronize_task.xml" value="0.193" />
+        <entry key="..\:/Users/IWDEV1/Desktop/PracticasNew/Alcalist_Mobile_WMS_BR/app/src/main/res/drawable/synchronize_task2.xml" value="0.193" />
         <entry key="..\:/Users/IWDEV1/Desktop/PracticasNew/Alcalist_Mobile_WMS_BR/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/IWDEV1/Desktop/PracticasNew/Alcalist_Mobile_WMS_BR/app/src/main/res/layout/fragment_task.xml" value="0.18" />
+        <entry key="..\:/Users/IWDEV1/Desktop/PracticasNew/Alcalist_Mobile_WMS_BR/app/src/main/res/layout/task_item.xml" value="0.25" />
       </map>
     </option>
   </component>

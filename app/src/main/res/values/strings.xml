@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">Alcalist_Mobile_WMS_BR</string>
+    <string name="app_name">Alcalist_Mobile_WMS</string>
+    <string name="status_to_run">Por ejecutar</string>
+    <string name="status_in_action">En ejecución</string>
+    <string name="status_to_transmit">Por transmitir</string>
+    <string name="task_manager">Manager de tareas</string>
+    <string name="filter">Filtrar</string>
+
 </resources>
