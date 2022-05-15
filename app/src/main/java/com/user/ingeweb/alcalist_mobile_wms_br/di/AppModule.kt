@@ -10,6 +10,7 @@ import com.user.ingeweb.alcalist_mobile_wms_br.utils.LiveDataCallAdapterFactory
 import dagger.Module
 import dagger.Provides
 import retrofit2.Retrofit
+import retrofit2.converter.gson.GsonConverterFactory
 import javax.inject.Singleton
 
 @Module(includes = [ViewModelModule::class])
@@ -18,8 +19,8 @@ class AppModule {
     @Provides
     fun provideApplicationApi(): ApplicationApi {
         return Retrofit.Builder()
-            .baseUrl("https://www.thesportsdb.com/api/v1/json/1/")
-            .addConverterFactory(CustomGsonConverterFactory.create())
+            .baseUrl("http://awsbr.ovall.com.co/api/")
+            .addConverterFactory(GsonConverterFactory.create())
             .addCallAdapterFactory(LiveDataCallAdapterFactory())
             .build()
             .create(ApplicationApi::class.java)

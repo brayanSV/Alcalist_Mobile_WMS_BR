@@ -3,7 +3,7 @@ package com.user.ingeweb.alcalist_mobile_wms_br.model
 import com.google.gson.annotations.SerializedName
 
 
-data class Status (
+data class StatusResponse (
   @SerializedName("Code")
   var Code: String,
   @SerializedName("Message")

@@ -1,15 +1,16 @@
 package com.user.ingeweb.alcalist_mobile_wms_br.api
 
 import androidx.lifecycle.LiveData
-import retrofit2.http.GET
-import retrofit2.http.Path
-import retrofit2.http.Query
+import com.user.ingeweb.alcalist_mobile_wms_br.model.ResponseTask
+import com.user.ingeweb.alcalist_mobile_wms_br.model.Task
+import com.user.ingeweb.alcalist_mobile_wms_br.model.UserRequest
+import retrofit2.http.*
 
 interface  ApplicationApi {
-    /*@GET("lookup_all_teams.php")
-    fun teams(@Query("id") idLeague: Long): LiveData<ApiResponse<List<Teams>>>
+    @POST("TaskManger")
+    fun task(@Body user: UserRequest): LiveData<ApiResponse<ResponseTask>>
 
-    @GET("lookupteam.php")
+     /*@GET("lookupteam.php")
     fun teamsById(@Query("id") idTeam: Long): LiveData<ApiResponse<Teams>>
 
     @GET("eventslast.php")

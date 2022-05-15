@@ -4,7 +4,7 @@ import com.google.gson.annotations.SerializedName
 
 data class ResponseTask (
   @SerializedName("Status")
-  var Status: Status,
+  var Status: StatusResponse,
   @SerializedName("Task")
   var Task: ArrayList<Task>,
   @SerializedName("Accompaniment")

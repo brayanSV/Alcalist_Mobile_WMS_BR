@@ -15,6 +15,6 @@ abstract class TaskDao {
     @Query("select * from task where task.TaskIdejec = :taskId")
     abstract fun loadTaskId(taskId: Long): LiveData<Task>
 
-    @Query("select * from task where task.TaskIdejec = :taskId")
-    abstract fun load(taskId: Long): LiveData<List<Task>>
+    @Query("select * from task")
+    abstract fun load(): LiveData<List<Task>>
 }

@@ -1,5 +1,6 @@
 package com.user.ingeweb.alcalist_mobile_wms_br.repository
 
+import android.util.Log
 import androidx.annotation.MainThread
 import androidx.annotation.WorkerThread
 import androidx.lifecycle.LiveData

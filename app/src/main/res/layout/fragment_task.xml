@@ -6,11 +6,19 @@
     tools:context=".ui.task.TaskFragment">
 
     <data>
-        <import type="com.user.ingeweb.alcalist_mobile_wms_br.ui.common.FilterTaskCallback" />
+        <import type="java.util.List" />
+        <import type="androidx.lifecycle.LiveData" />
+        <import type="com.user.ingeweb.alcalist_mobile_wms_br.model.Task" />
+        <import type="com.user.ingeweb.alcalist_mobile_wms_br.repository.Resource" />
+        <import type="com.user.ingeweb.alcalist_mobile_wms_br.ui.common.TaskCallback" />
 
         <variable
-            name="filterOnclick"
-            type="FilterTaskCallback" />
+            name="taskOnclick"
+            type="TaskCallback" />
+
+        <variable
+            name="task"
+            type="LiveData&lt;Resource&lt;List&lt;Task>>>"/>
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -24,7 +32,7 @@
             android:layout_width="match_parent"
             android:layout_height="25dp"
             android:background="@drawable/button_gray"
-            android:onClick="@{()-> filterOnclick.filter() }"
+            android:onClick="@{()->taskOnclick.filter() }"
             android:text="@string/filter"
             android:textAllCaps="false"
             android:textColor="@color/gray_666666"
@@ -37,8 +45,9 @@
             android:id="@+id/taskList"
             android:layout_width="match_parent"
             android:layout_height="0sp"
+            app:layoutManager="LinearLayoutManager"
             app:layout_constraintWidth_percent="1"
-            app:layout_constraintBottom_toTopOf="@+id/btnsincronizar"
+            app:layout_constraintBottom_toTopOf="@+id/btnSync"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/btnFilter"
@@ -47,13 +56,14 @@
             android:layout_marginBottom="15sp"/>
 
         <ImageButton
-            android:id="@+id/btnsincronizar"
+            android:id="@+id/btnSync"
             android:layout_width="200dp"
             android:layout_height="70dp"
             android:layout_gravity="center"
             android:background="@android:color/transparent"
             android:scaleType="centerInside"
             android:src="@drawable/synchronize_task"
+            android:onClick="@{()->taskOnclick.sync()}"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"/>

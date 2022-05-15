@@ -42,6 +42,7 @@ public class CustomGsonResponseBodyConverter<T> implements Converter<ResponseBod
         }
 
         try {
+            Log.e("data", sb.toString());
             JSONObject json = new JSONObject(sb.toString());
 
             if (!json.isNull("teams")) {
@@ -50,7 +51,7 @@ public class CustomGsonResponseBodyConverter<T> implements Converter<ResponseBod
                 jsonResult = json.getJSONArray("results");
             }
         } catch (JSONException e) {
-            Log.e("datos", e.getMessage().toString());
+            Log.e("data", e.getMessage().toString());
         }
 
         try {

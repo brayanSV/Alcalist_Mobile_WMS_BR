@@ -1,5 +1,6 @@
 package com.user.ingeweb.alcalist_mobile_wms_br.utils
 
+import android.util.Log
 import androidx.lifecycle.LiveData
 import com.user.ingeweb.alcalist_mobile_wms_br.api.ApiResponse
 import retrofit2.CallAdapter
